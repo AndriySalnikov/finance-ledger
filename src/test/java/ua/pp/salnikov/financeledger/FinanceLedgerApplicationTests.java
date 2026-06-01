@@ -1,0 +1,13 @@
+package ua.pp.salnikov.financeledger;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class FinanceLedgerApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
