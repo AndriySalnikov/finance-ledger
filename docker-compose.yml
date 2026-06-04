@@ -1,0 +1,19 @@
+version: '3.5'
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: postgres
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: financeledger
+    volumes:
+      - db:/var/lib/postgresql/data
+    restart: always
+
+volumes:
+  db:
+    driver: local
